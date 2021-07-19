@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Yeseva+One');
+
+
+*{margin:0; padding:0;}
+
+
+
+body{
+	-webkit-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	height:100%;
+	width:100%;
+
+
+}
+
+.full_wrap{
+	width:100%;
+}
+.wrap{
+	width:960px;
+	display:block;
+	margin:0 auto;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+a{
+	text-decoration:none;
+}
+
+
+
+h1, h2, h3 ,h4, h5, h6{
+	margin:30px 0;
+}
+
+p{
+	line-height:1.5em;
+}
+
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.center{
+	text-align:center;
+}
+
+.fix{
+	overflow:hidden;
+}
+
+/*----------main css-----------*/
+
+
+/*-----header start---*/
+
+.full_screen{
+	min-height:100vh;
+	/*100vh(viewport height )makes element stretch to 100% of the browsers height */
+}
+
+
+/*background slider css*/
+
+.fullBackground{
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:1;
+}
+
+/*---hamburger css---*/
+
+.icon{
+	position:absolute;
+	top:70%;
+	left:5%;
+	transform:translate(-50%, -50%);
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	display:none;
+}
+
+.hamburger{
+	width:25px;
+	height:4px;
+	background:#fff;
+	top:20%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	box-shadow:0 2px 5px rgba(0,0,0,.2);
+	transition: all .5s ease-out;
+}
+
+.hamburger:before,.hamburger:after{
+	content:"";
+	position:absolute;
+	width:25px;
+	height:4px;
+	background:#fff;
+	box-shadow:0 2px 5px rgba(0,0,0,.2);
+	transition: all .5s ease-out;
+}
+
+
+.hamburger:before{
+	top:-7px;
+}
+
+
+
+.hamburger:after{
+	bottom:-7px;
+}
+
+.active .hamburger{
+	background:rgba(0,0,0,0);
+	box-shadow:0 2px 5px rgba(0,0,0,0);
+}
+
+
+.active .hamburger:before{
+	top:0;
+	transform:rotate(45deg);
+	z-index:25;
+}
+
+
+
+ .active .hamburger:after{
+	top:0;
+	transform:rotate(135deg);
+	z-index:25;
+}
+
+
+
+
+/*---header css-----*/
+
+
+#home .header_top{
+	width:100%;
+	position:relative;
+	z-index:2!important; /* Adding !important will give this rule more precedence over inline style */
+
+}
+
+
+
+
+#home .header_top .logo{
+	width:20%;
+	background:url("../images/logo_bg.png") no-repeat;
+	background-position:center bottom;
+	display:inline-block;
+	transform: translate(4%, 16%);
+}
+
+
+
+
+#home .header_top .logo a{
+	font-family: 'Yeseva One', cursive;
+	font-size:36px;
+	color:#E4E5E5;
+	display:block;
+	padding: 20px 0px;
+	text-align:center;
+
+}
+
+#home .header_top .navbar{
+	 width: 70%;
+    float: right;
+}
+
+
+
+#home .header_top .menu ul li{
+	list-style:none;
+	float:left;
+	position:relative;
+	padding:50px 24px;
+}
+
+
+#home .header_top .menu ul li.active:before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:90%;
+	height:3px;
+	background:#C8C5BD;
+
+}
+
+
+
+#home .header_top .menu li a{
+	display:block;
+	font-family: 'Gentium Book Basic', serif;
+	font-size:21px;
+	color:#E4E5E5;
+	font-weight:bold;
+
+}
+
+#home .header_top .menu li a:hover{
+	color: #CC9900;
+}
+
+#home .header_top .social_icon{
+	width:81px;
+	cursor:pointer;
+	padding:52px 0px;
+	display:inline-block;
+
+}
+
+
+
+#home .header_top .social_icon .icon_frame{
+	display:inline-block;
+	height:24px;
+	width:24px;
+	background:url("../images/social_icon.png") no-repeat;
+}
+
+#home .header_top .social_icon #twitter{
+	background-position:0 0;
+}
+
+#home .header_top .social_icon #youtube{
+	background-position:-40px 0;
+}
+
+#home .header_top .social_icon #facebook{
+	background-position:-70px 0;
+}
+
+#home .fullBackground .header_text{
+	position: absolute;
+	top:12%;
+	left:14%;
+	width:80%;
+
+
+}
+
+#home .header_text h1{
+	font-family: 'Yeseva One', cursive;
+	font-size:90px;
+	color:#F7F7F6;
+	background:url("../images/line_bg.png") no-repeat;
+	background-position:center bottom;
+	padding-bottom:50px;
+
+}
+
+
+
+#home .header_text a{
+	display:inline-block;
+	font-family:'Lato', sans-serif;
+	font-size:18px;
+	color:#fff;
+	text-transform:uppercase;
+	padding:20px 50px;
+	margin-right:5px;
+	position:relative;
+	z-index:1;
+	border:1px solid #D5D0BB;
+	transition:all .4s ease;
+
+}
+
+#home .header_text a:hover{
+	border:1px solid #0E0C0B;
+}
+
+#home .header_text a:after{
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:101%;
+	background-color:#fff;
+	opacity:.5;
+	position:absolute;
+	z-index:-1;
+
+
+}
+
+ #home .header_text a:hover:after{
+
+	background-color:#000;
+	opacity:.8;
+
+}
+
+/*----------css for sticky menu-----------*/
+
+#sticky-wrapper {
+    height: 100% !important;
+}
+
+
+#home .header_top:after, .header_top .logo, .header_top .logo h2, .header_top .menu ul li, .header_top .social_icon{
+
+	transition:all .4s ease;
+
+
+}
+
+
+.is-sticky .header_top:after{
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#000;
+	opacity:.7;
+	position:absolute;
+	z-index:-1;
+
+}
+
+#home .is-sticky .header_top .logo{
+	width:15%;
+}
+
+#home .is-sticky .header_top .logo a{
+	font-size:30px;
+	padding:25px 0;
+}
+
+#home .is-sticky .header_top .menu ul li{
+	padding: 40px 24px;
+}
+
+
+#home .is-sticky .header_top .menu li.active a{
+	color: #CC9900;
+}
+
+
+#home .is-sticky .header_top .social_icon{
+	padding:45px 5px;
+}
+
+
+
+
+
+
+/*-----about css---*/
+
+
+.about_bg{
+	background:url("../images/about_bg.jpg") no-repeat;
+	background-position: 100% 100%;
+    background-size: cover;
+}
+
+
+#about .about_text{
+	text-align: center;
+    width: 30%;
+	float:left;
+	margin-left:10%;
+
+}
+
+
+#about .about_text h2{
+	font-family: 'Yeseva One', cursive;
+	font-size:36px;
+	color:#CC9900;
+	background:url("../images/golden_line_bg.png") no-repeat;
+    background-position: center bottom;
+	padding-bottom:30px;
+}
+
+#about .about_text p{
+	font-family:'Lato', sans-serif;;
+	font-size:16px;
+	color:#CC9900;
+	margin-bottom:10px;
+}
+
+#about .about_text img{
+	width:219px;
+	height:221px;
+	margin-left:15%;
+}
+
+#about .about_img{
+	width:50%;
+	margin-left:5%;
+	float:left;
+}
+
+
+
+
+/*-----ingredients css---*/
+
+#ingredients{
+	background:url("../images/ingredient_bg.jpg") no-repeat;
+    background-size:cover;/*for parallax bg css */
+    background-position: 100% 100% !important;/*for parallax bg css overwrite*/
+	background-attachment:fixed;/*for parallax bg*/
+	padding:6%;
+	/*as set background-position: cover img would not show full. so padding will help to show full size*/
+}
+
+
+#ingredients .ingredients_text{
+	text-align:center;
+	position:relative;
+	z-index:1;
+	width: 34%;
+    left: 51%;
+	bottom: 10%;
+    padding: 30px;
+
+}
+
+#ingredients .ingredients_text:after{
+
+	background-color:#000;
+	opacity:.6;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	content:"";
+	z-index:-1;
+}
+
+#ingredients h2{
+	font-family: 'Yeseva One', cursive;
+	font-size:36px;
+	color:#F7F7F6;
+	background:url("../images/white_line_bg.png") no-repeat;
+    background-position: center bottom;
+	padding-bottom:30px;
+}
+
+
+#ingredients p{
+	font-family:'Lato', sans-serif;
+	font-size:16px;
+	color:#F7F7F6;
+}
+
+
+#ingredients .ingredients_text .ingredients_img  img{
+	display: inline-block;
+	width: 110px;
+	margin-left: 2%;
+	margin-top:50px;
+}
+
+
+
+/*-----food-menu section start---*/
+
+.food_menu_bg{
+	background:url("../images/food_menu_bg.jpg") no-repeat;
+	background-position:100% 100%;
+	background-size:cover;
+	padding-bottom: 35px;
+}
+
+#food_menu section{
+	width:40%;
+}
+
+#food_menu .left_side_menu {
+	margin-left:7%;
+}
+
+#food_menu .right_side_menu {
+	margin-right:7%;
+}
+
+
+#food_menu h2{
+	text-align:center;
+	font-family: 'Yeseva One', cursive;
+	font-size:36px;
+	color:#CC9900;
+	margin-top:70px;
+	background:url("../images/golden_line_bg.png") no-repeat;
+    background-position: center bottom;
+	padding-bottom:30px;
+}
+
+#food_menu  h3{
+	font-family: 'Yeseva One', cursive;
+	font-size:21px;
+	color:#CC9900;
+	border-bottom: 1px solid #E0D3A7;
+	padding-bottom:10px;
+}
+
+
+
+#food_menu p{
+	font-family:'Lato', sans-serif;
+	font-size:16px;
+	color:#CC9900;
+}
+
+#food_menu .single_food_menu .food_item span{
+	float:right;
+}
+
+.special{
+	border:1px solid #E0D3A7;
+	position:relative;
+	margin-top:30px;
+	padding:10px 20px;
+}
+
+
+
+.special:before{
+    content: "Special";
+    position: absolute;
+    background-color: #D8BE74;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;;
+	top: -27px;
+    right: -1px;
+}
+
+
+/*-----food-menu section start---*/
+
+/*-----review section start---*/
+
+
+#reviews{
+	background:url("../images/reviews_bg.jpg") no-repeat;
+	background-position:100% 100%;
+	background-size:cover;
+	padding:80px 0;
+
+}
+
+#reviews .reviews_text{
+	text-align:center;
+	position:relative;
+	z-index:1;
+	width: 42%;
+    left: 30%;
+	bottom: 12%;
+    padding: 30px;
+	margin-top:100px;
+}
+
+#reviews .reviews_text:after{
+	background-color:#000;
+	opacity:.6;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	content:"";
+	z-index:-1;
+}
+
+#reviews h2{
+	font-family: 'Yeseva One', cursive;
+	font-size:36px;
+	color:#F7F7F6;
+	background:url("../images/white_line_bg.png") no-repeat;
+    background-position: center bottom;
+	padding-bottom:30px;
+}
+
+#reviews .reviews_text .quotation{
+	position:relative;
+}
+
+#reviews .reviews_text .quotation:after{
+	content:"\f10d";
+	font-family:FontAwesome;
+	font-size:30px;
+	color:#9EA09D;
+	position:absolute;
+	top:2px;
+	left:5px;
+
+}
+
+
+#reviews .reviews_text .quotation .single_quotation blockquote{
+	font-family: 'Gentium Book Basic', serif;
+	font-size:25px;
+	color:#F7F7F6;
+	margin:25px 35px;
+
+}
+
+#reviews .reviews_text p{
+	font-family: 'Gentium Book Basic', serif;
+	font-size:18px;
+	color:#F7F7F6;
+
+}
+
+
+
+/*-----review section end---*/
+
+/*-----reservation section start---*/
+
+#reservision{
+	background:url("../images/reservesion_bg.jpg") no-repeat;
+	background-size:cover;
+	background-position:100% 100%;
+	padding:100px 40px;
+}
+
+#reservision .img_part{
+	width:60%;
+	margin-right:10px;
+}
+
+#reservision .img_part img{
+	width:45%;
+	padding-left:20px;
+
+
+}
+
+#reservision .text_part{
+	width:38%;
+}
+
+#reservision h2{
+	font-family: 'Yeseva One', cursive;
+	font-size:36px;
+	color:#CC9900;
+	background:url("../images/golden_line_bg.png") no-repeat;
+    background-position: center bottom;
+	padding-bottom:30px;
+	margin-top:0px;
+	margin-bottom:30px;
+	text-align:center;
+}
+
+#reservision p{
+	font-family:'Lato', sans-serif;;
+	font-size:16px;
+	color:#4c4c4c;
+	text-align:center;
+
+}
+
+#reservision form{
+	margin-top:30px;
+}
+
+#reservision .text_part .field{
+	width:40%;
+	margin-bottom:30px;
+}
+
+ #reservision .text_part .field label{
+	font-family:OpenSans;
+	font-size:14px;
+	color:#c9a131;
+	font-weight:bold;
+
+ }
+
+
+ #reservision .text_part .field input, select{
+	border:1px solid #C8C6C6;
+	width:90%;
+	height:35px;
+	font-family:OpenSans;
+	font-size:16px;
+	color:#7c7c7c;
+	font-style:italic;
+	padding-left:10px;
+ }
+
+ /*--for placeholder text color change--*/
+
+ #reservision .text_part .field input[id="date"]::-webkit-input-placeholder {
+color:#7c7c7c !important;
+}
+
+#reservision .text_part .field input[id="date"]:-moz-placeholder { /* Firefox 18- */
+color:#7c7c7c !important;
+}
+
+#reservision .text_part .field input[id="date"]::-moz-placeholder {  /* Firefox 19+ */
+color:#7c7c7c!important;
+}
+
+#reservision .text_part .field input[id="date"]:-ms-input-placeholder {
+color:#7c7c7c !important;
+}
+
+ #reservision .text_part .field input:focus, select:focus {
+	  border:1px solid #C9A131!important;
+    /* box-shadow: 0 0 2px red; */
+	outline: none;
+
+  }
+
+ #reservision .text_part input[type="submit"]{
+	 background-color:#C9A131;
+	 color:#fff;
+	 font-family:OpenSans;
+	font-size:16px;
+	padding: 10px 55px;
+    border: none;
+	 margin-bottom:70px;
+	 margin-left:-10%;
+ }
+
+
+
+/*-----reservation section end---*/
+
+/*-----footer section start---*/
+
+#footer{
+	background:#191919;
+	color:#FEFEFE;
+	text-align:center;
+	padding: 50px 0px;
+}
+
+
+#footer .single_footer{
+	width: 25%;
+    float: left;
+    margin-left:7%;
+}
+
+
+#footer h3{
+	font-family: 'Yeseva One', cursive;
+	font-size:21px;
+	background:url("../images/white_line_bg.png") no-repeat;
+    background-position: center bottom;
+	padding-bottom:30px;
+}
+
+
+
+
+#footer p{
+	font-family:OpenSans;
+	font-size:16px;
+	font-weight:bold;
+}
+
+
+#footer .single_footer .card_section .icon_frame{
+	display: inline-block;
+    height: 15px;
+    width: 21px;
+    background: url("../images/card_img.png") no-repeat;
+	margin-top:50px;
+}
+
+#footer .single_footer .card_section #amex{
+	background-position:0 0;
+	    padding-right: 10px;
+}
+#footer .single_footer .card_section #paypal{
+	background-position:-34px 0;
+	    padding-right: 10px;
+}
+#footer .single_footer .card_section #visa{
+	background-position:-66px 0;
+	    padding-right: 10px;
+}
+#footer .single_footer .card_section #jcb{
+	background-position:-98px 0;
+}
+
+
+
+
+
+#footer .single_footer .footer_social_icon .icon_frame{
+	display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url("../images/footer_social_icon.png") no-repeat;
+	margin-top:50px;
+}
+
+#footer .single_footer .footer_social_icon #fb{
+	background-position:0 0;
+	padding-right: 5px;
+}
+
+#footer .single_footer .footer_social_icon #youtube-2 {
+	background-position:-13px 0;
+	padding-right: 10px;
+}
+
+#footer .single_footer .footer_social_icon #twitter-2{
+	background-position:-40px 0;
+	padding-right: 15px;
+}
+
+#footer .single_footer .footer_social_icon #linkedin{
+	background-position:-73px 0;
+}
+
+
+/*-----footer section end---*/
+
+
+
+
+
+

@@ -1,0 +1,1028 @@
+/*		Default Layout: 980px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1324px: 32px.
+-------------------------------------------------------------------------------
+   */
+   
+   @media only screen and (min-width: 981px) and (max-width: 1200px){
+	
+		
+	
+	
+	
+	#home .header_top .logo{
+		width:15%;
+	}
+	
+	#home .header_top .logo{
+		transform: translate(6%, 16%);
+	}
+	
+	#home .header_top .navbar{
+		width:80%;
+	}
+	
+	#home .header_top .menu ul li{
+		padding:50px 19px;
+	}
+	
+	
+	
+	#home .is-sticky .header_top .menu ul li{
+		padding:40px 18px;
+	}
+	
+	
+	#home .fullBackground .header_text{
+		
+		left:14%;
+		top:15%;
+
+	}
+	
+	#ingredients .ingredients_text{
+		width: 55%;
+		left: 20%;
+	}
+	
+	#reservision .img_part {
+		width: 55%;
+		margin-right: 10px;
+	}
+	
+	#reservision .text_part {
+		width: 40%;
+	}
+	
+	
+	
+	#reservision form{
+		margin-top:10px;
+	}
+	
+	#reservision .text_part .field{
+	width:48%;
+	margin-left:2%;
+	}
+	
+	#reviews .reviews_text{
+		width:60%;
+		left: 15%;
+	}
+	
+	
+	#footer .single_footer{
+		width: 30%;
+		margin-left:3%;
+	}
+	
+	
+	
+   }
+
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+   */
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+
+	#home .header_top .icon{
+		display:block;
+
+	}
+	
+	#home .header_top .logo{
+		transform: translate(190%, 16%);
+	
+	}
+	
+	#home .is-sticky .header_top .logo{
+		transform: translate(255%, 16%);
+   }
+	
+	
+	
+	#home .header_top .navbar{
+		width:20%;
+	}
+	
+	#home .header_top .menu{
+		width:50%;
+		display:none;
+	}
+	
+	
+	#home .header_top .menu ul{
+		display: flex;
+		flex-direction: column;
+        list-style-type: none;
+		position:absolute;/*to move ul in left hand side*/
+		top:100%;
+		left:0;
+		z-index:2;
+		width:30%;
+		
+	}
+	
+	.show {
+		display:block !important;
+	}
+	
+	#home .header_top .menu ul:after{
+		content:"";
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:#000;
+		opacity:.7;
+		position:absolute;
+		z-index:-1;
+			
+	}
+	
+	
+	
+	#home .header_top .menu ul li, #home .is-sticky .header_top .menu ul li{
+		padding: 20px 25px;
+		border-bottom: 1px solid #f6f4e2;
+	}
+	
+	#home .header_top .menu ul li:last-child{
+		border-bottom:none;
+	}
+	
+	#home .header_top .menu ul li.active:before{
+		width:100%;
+		border-bottom:none;
+	}
+	
+	
+	
+	#home .fullBackground .header_text{
+		
+		left:16%;
+		top:20%;
+
+	}
+	
+	#home .header_text h1{
+		font-size:70px;
+	}
+	
+	#food_menu section{
+		width:80%;
+	}
+	
+	#ingredients{
+	 background-position:left top !important;/*for parallax bg css overwrite*/
+	 padding:10%;
+}
+	
+	#ingredients .ingredients_text{
+		width: 70%;
+		left: 12%;
+		bottom: 2%;
+	}
+	
+	
+	#reviews .reviews_text{
+		width:60%;
+		margin-top: 15px;
+		left: 16%;
+		bottom: 6%;
+	}
+	
+	
+	
+	#reviews .reviews_text .quotation .single_quotation blockquote{
+		font-size: 22px;
+	}
+	
+	#reviews .reviews_text .single_quotation p{
+		font-size: 14px;
+	}
+	
+	
+	
+	#reservision .img_part{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+	#reservision .text_part{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+	#reservision .text_part .field{
+		width:100%;
+		margin-left:5%;
+		float:none;
+	}
+	
+	 #reservision .text_part input[type="submit"]{
+		  margin-left:5%;
+	 }
+	 
+	 #footer{
+		  padding: 20px 0px;
+	  }
+	 
+	 #footer .single_footer{
+		width: 50%;
+		margin-left:25%;
+	}
+	
+	#footer .single_footer .card_section .icon_frame, #footer .single_footer .footer_social_icon .icon_frame {
+		margin-top:20px;
+	}
+	
+	
+	
+	
+}
+	
+
+
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+
+@media only screen and (max-width: 767px) {
+	
+	#home .header_top .icon{
+		display:block;
+		left:12%;
+		top:70%;
+	}
+	
+	.hamburger, .hamburger:before,.hamburger:after{
+		width:20px;
+		height:2px;
+	}
+	
+	#home .header_top .logo{
+		width:40%;
+		transform: translate(75%, 4%);
+	}
+	
+	#home .is-sticky .header_top .logo{
+		width:35%;
+		transform: translate(85%, 10%);
+	}
+	
+	#home .header_top .logo a, #home .is-sticky .header_top .logo a {
+		
+		font-size: 24px;
+		padding: 30px 0px;
+	}
+	
+	#home .header_top .navbar{
+		width:26%;
+	}
+	
+	#home .is-sticky .header_top .navbar{
+		width:30%;
+	}
+	
+	#home .header_top .social_icon {
+		padding: 28px 0px;
+		
+	}
+	
+	#home .is-sticky .header_top .social_icon {
+		padding: 37px 0px;
+	}
+	
+	
+	#home .header_top .menu{
+		width:50%;
+		display:none;
+	}
+	
+	
+	#home .header_top .menu ul{
+		display: flex;
+		flex-direction: column;
+        list-style-type: none;
+		position:absolute;/*to move ul in left hand side*/
+		top:100%;
+		left:0;
+		width:100%;
+		z-index:2;
+		text-align:center;
+		
+	}
+	
+	.show {
+		display:block !important;
+	}
+	
+	#home .header_top .menu ul:after{
+		content:"";
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:#000;
+		opacity:.7;
+		position:absolute;
+		z-index:-1;
+			
+	}
+	
+	
+	
+	#home .header_top .menu ul li, #home .is-sticky .header_top .menu ul li{
+		padding: 8px;
+		border-bottom: 1px solid #f6f4e2;
+	}
+	
+	#home .header_top .menu ul li:last-child{
+		border-bottom:none;
+	}
+	
+	#home .header_top .menu ul li.active:before{
+		width:100%;
+		border-bottom:none;
+	}
+	
+	#home .fullBackground .header_text{
+		
+		width:60%;
+		left: 20%;
+		top: 15%;
+
+	}
+	
+	#home .header_text h1{
+		font-size:28px;
+		margin-top:50px;
+	}
+	
+	#home .header_text a{
+		margin-bottom:10px;
+		padding:10px;
+	}
+	
+	#about .about_text{
+		width: 80%;
+	}
+	
+	#about .about_img{
+		width:80%;
+		margin-left:10%;
+	
+	}
+	
+	#ingredients{
+	 background-position:left top !important;/*for parallax bg css overwrite*/
+	 padding:10%;
+}
+	
+	#ingredients .ingredients_text{
+		width: 85%;
+		left: -4%;
+		bottom: 2%;
+	}
+	
+	#ingredients h2{
+		font-size:20px;
+	}
+	
+	#ingredients p{
+		font-size:14px;
+		margin:0px;
+	}
+	
+	#ingredients .ingredients_text .ingredients_img img{
+		width: 50px;
+		margin-left: 1%;
+		margin-top: 10px;
+	}
+	
+	
+	#food_menu section{
+		width:80%;
+	}
+	
+	#food_menu h2{
+		font-size:30px;
+	}
+	
+	#food_menu h3{
+		font-size:18px;
+	}
+	
+	#food_menu p{
+		font-size:14px;
+	}
+	
+	
+	
+	#reviews{
+		background-position: 25% 25%;
+		padding: 20px 0;
+	}
+	
+	
+	#reviews .reviews_text{
+		width:75%;
+		left: 8%;
+		bottom: 12%;
+		padding: 15px;
+		margin-top: 0;
+	}
+	
+	
+	#reviews .reviews_text h2{
+		font-size: 22px;
+		margin:0px
+	
+	}
+	
+	#reviews .reviews_text .quotation .single_quotation blockquote{
+		font-size: 16px;
+	}
+	
+	#reviews .reviews_text .single_quotation p{
+		font-size: 14px;
+	}
+
+
+	
+	#reservision{
+		padding:50px 40px;
+	}
+	
+	#reservision h2{
+		font-size: 26px;
+	}
+	
+	
+	
+	#reservision p{
+		font-size:14px;
+	}
+	
+	#reservision form{
+		margin-top:20px;
+	}
+	
+	#reservision .img_part{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+	#reservision .img_part img{
+		width:38%;
+	}
+	
+	
+	#reservision .text_part{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+
+	
+	#reservision .text_part .field{
+		width:90%;
+		margin-left:5%;
+		float:none;
+	}
+	
+	#reservision .text_part input[type="submit"]{
+		padding: 10px 50px;
+		margin-left:5%;
+	}
+	
+	
+	
+	 #footer{
+		  padding: 20px 0px;
+	  }
+	 
+	 #footer .single_footer{
+		width: 50%;
+		margin-left:25%;
+	}
+	
+	#footer h3{
+		font-size:16px;
+		margin-top:10px
+	}
+	
+	#footer p{
+		font-size:14px;
+	}
+	
+	#footer .single_footer .card_section .icon_frame, #footer .single_footer .footer_social_icon .icon_frame {
+		margin-top:20px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+	#home .header_top .icon{
+		display:block;
+		left:10%;
+		top:10%;
+	}
+	
+	#home .header_top .logo{
+		transform: translate(75%, 10%);
+	}
+	
+	#home .is-sticky .header_top .logo{
+		transform: translate(95%, 10%);
+	}
+	
+	#home .header_top .logo a{
+		padding: 25px 0px;
+		font-size: 28px;
+		
+	}
+	
+
+
+	#home .header_top .navbar{
+		width:15%;
+	}
+	
+	#home .header_top .menu{
+		width:50%;
+		display:none;
+	}
+	
+	
+	#home .header_top .menu ul{
+		display: flex;
+		flex-direction: column;
+        list-style-type: none;
+		position:absolute;/*to move ul in left hand side*/
+		top:100%;
+		left:0;
+		z-index:2;
+		width:100%;
+		text-align:center;
+		
+	}
+	
+	.show {
+		display:block !important;
+	}
+	
+	#home .header_top .menu ul:after{
+		content:"";
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:#000;
+		opacity:.7;
+		position:absolute;
+		z-index:-1;
+			
+	}
+	
+	
+	
+	#home .header_top .menu ul li, #home .is-sticky .header_top .menu ul li{
+		padding: 20px 25px;
+		border-bottom: 1px solid #f6f4e2;
+	}
+	
+	#home .header_top .menu ul li:last-child{
+		border-bottom:none;
+	}
+	
+	#home .header_top .menu ul li.active:before{
+		width:100%;
+		border-bottom:none;
+	}
+	
+	#home .fullBackground .header_text{
+		width: 60%;
+		left: 20%;
+		top: 15%;
+	
+
+	}
+	
+	#home .header_text h1{
+		font-size: 38px;
+		margin-top: 50px;
+	}
+	
+	
+	
+	#about .about_text{
+		width: 80%;
+	}
+	
+	#about .about_img{
+		width:80%;
+		margin-left:10%;
+	
+	}
+	
+	#ingredients{
+	 background-position:left top !important;/*for parallax bg css overwrite*/
+	 padding:10%;
+}
+	
+	#ingredients .ingredients_text{
+		width: 70%;
+		left: 12%;
+		bottom: 2%;
+	}
+	
+	#ingredients h2{
+		font-size:28px;
+	}
+	
+	#ingredients p{
+		font-size:16px;
+		margin:0px;
+	}
+	
+	
+	#food_menu h2{
+		font-size:30px;
+		margin-top:20px
+	}
+	
+	#food_menu h3{
+		font-size:18px;
+	}
+	
+	#food_menu p{
+		font-size:14px;
+	}
+	
+	
+	#reviews {
+		background-position:50% 50%;
+	}
+	
+	#reviews .reviews_text{
+		width:70%;
+		margin-top: 0px;
+		left: 10%;
+		bottom: 6%;
+	}
+	
+	#reviews .reviews_text .quotation .single_quotation h2{
+		
+		font-size:26px;
+		margin-top:10px;
+	}
+	
+	#reviews .reviews_text .quotation .single_quotation blockquote{
+		font-size: 18px;
+	}
+	
+	#reviews .reviews_text .single_quotation p{
+		font-size: 14px;
+	}
+	
+	
+	#reservision{
+		padding:50px 40px;
+	}
+	
+	#reservision form{
+	margin-top:20px;
+	}
+	
+	
+	
+	#reservision .img_part{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+	#reservision .img_part img{
+		width:40%;
+	}
+	
+	#reservision .text_part{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+	#reservision h2{
+		font-size:26px;
+	}
+	
+	#reservision .text_part .field{
+		width:90%;
+		margin-left:5%;
+		float:none;
+	}
+	
+	#reservision .text_part input[type="submit"]{
+		margin-left:5%;
+		
+	}
+	
+	 #footer{
+		  padding: 20px 0px;
+	  }
+	 
+	 #footer .single_footer{
+		width: 50%;
+		margin-left:25%;
+	}
+	
+	#footer h3{
+		font-size:18px;
+		margin-top:20px
+	}
+	
+	#footer .single_footer .card_section .icon_frame, #footer .single_footer .footer_social_icon .icon_frame {
+		margin-top:20px;
+	}
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2){
+	
+		#home .header_top .icon{
+		display:block;
+		left:10%;
+		top:70%;
+	}
+	
+	#home .header_top .logo{
+		transform: translate(75%, 10%);
+	}
+	
+	#home .is-sticky .header_top .logo{
+		transform: translate(95%, 10%);
+	}
+	
+	#home .header_top .logo a{
+		padding: 25px 0px;
+		font-size: 28px;
+		
+	}
+	
+
+
+	#home .header_top .navbar{
+		width:15%;
+	}
+	
+	#home .header_top .menu{
+		width:50%;
+		display:none;
+	}
+	
+	
+	#home .header_top .menu ul{
+		display: flex;
+		flex-direction: column;
+        list-style-type: none;
+		position:absolute;/*to move ul in left hand side*/
+		top:100%;
+		left:0;
+		z-index:2;
+		width:100%;
+		text-align:center;
+		
+	}
+	
+	.show {
+		display:block !important;
+	}
+	
+	#home .header_top .menu ul:after{
+		content:"";
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:#000;
+		opacity:.7;
+		position:absolute;
+		z-index:-1;
+			
+	}
+	
+	
+	
+	#home .header_top .menu ul li, #home .is-sticky .header_top .menu ul li{
+		padding: 20px 25px;
+		border-bottom: 1px solid #f6f4e2;
+	}
+	
+	#home .header_top .menu ul li:last-child{
+		border-bottom:none;
+	}
+	
+	#home .header_top .menu ul li.active:before{
+		width:100%;
+		border-bottom:none;
+	}
+	
+	#home .fullBackground .header_text{
+		width: 60%;
+		left: 20%;
+		top: 15%;
+	
+
+	}
+	
+	#home .header_text h1{
+		font-size: 38px;
+		margin-top: 50px;
+	}
+	
+	
+	
+	#about .about_text{
+		width: 80%;
+	}
+	
+	#about .about_img{
+		width:80%;
+		margin-left:10%;
+	
+	}
+	
+	#ingredients{
+	 background-position:left top !important;/*for parallax bg css overwrite*/
+	 padding:10%;
+}
+	
+	#ingredients .ingredients_text{
+		width: 70%;
+		left: 12%;
+		bottom: 2%;
+	}
+	
+	#ingredients h2{
+		font-size:28px;
+	}
+	
+	#ingredients p{
+		font-size:16px;
+		margin:0px;
+	}
+	
+	
+	#food_menu h2{
+		font-size:30px;
+		margin-top:20px
+	}
+	
+	#food_menu h3{
+		font-size:18px;
+	}
+	
+	#food_menu p{
+		font-size:14px;
+	}
+	
+	
+	#reviews {
+		background-position:50% 50%;
+	}
+	
+	#reviews .reviews_text{
+		width:70%;
+		margin-top: 0px;
+		left: 10%;
+		bottom: 6%;
+	}
+	
+	#reviews .reviews_text .quotation .single_quotation h2{
+		
+		font-size:26px;
+		margin-top:10px;
+	}
+	
+	#reviews .reviews_text .quotation .single_quotation blockquote{
+		font-size: 18px;
+	}
+	
+	#reviews .reviews_text .single_quotation p{
+		font-size: 14px;
+	}
+	
+	
+	#reservision{
+		padding:50px 40px;
+	}
+	
+	#reservision form{
+	margin-top:20px;
+	}
+	
+	
+	
+	#reservision .img_part{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+	#reservision .img_part img{
+		width:40%;
+	}
+	
+	#reservision .text_part{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	
+	#reservision h2{
+		font-size:26px;
+	}
+	
+	#reservision .text_part .field{
+		width:90%;
+		margin-left:5%;
+		float:none;
+	}
+	
+	#reservision .text_part input[type="submit"]{
+		margin-left:5%;
+		
+	}
+	
+	 #footer{
+		  padding: 20px 0px;
+	  }
+	 
+	 #footer .single_footer{
+		width: 50%;
+		margin-left:25%;
+	}
+	
+	#footer h3{
+		font-size:18px;
+		margin-top:20px
+	}
+	
+	#footer .single_footer .card_section .icon_frame, #footer .single_footer .footer_social_icon .icon_frame {
+		margin-top:20px;
+	}
+	
+}
